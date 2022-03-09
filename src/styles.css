@@ -43,6 +43,10 @@ color: #424242;
   padding-right: 200px;
   padding-left: 200px;
 }
+.container-fluid-md{
+  padding-right: 200px;
+  padding-left: 200px;
+}
 .ft-input-message{
   height: 100px;
 }
@@ -247,7 +251,11 @@ input:focus ~ .highlight {
       .container-fluid{
         padding-left: 100px;
         padding-right: 100px;
-      }     
+      }   
+      .container-fluid-md{
+        padding-left: 100px;
+        padding-right: 100px;
+      }    
 }
 
 @media only screen and (max-width: 1300px) {
@@ -255,7 +263,10 @@ input:focus ~ .highlight {
 padding-left: 100px;
 padding-right: 100px;
   }
-  
+  .container-fluid-md{
+    padding-left: 100px;
+    padding-right: 100px;
+      }
   .container-fluid_sm{
     padding-left: 100px;
     padding-right: 0px;
@@ -300,7 +311,11 @@ padding-right: 0px;
 padding-left: 30px;
 padding-right: 30px;
   }
-
+  .container-fluid-md{
+    padding-left: 30px;
+    padding-right: 30px;
+      }
+    
   .container-fluid_sm{
     padding-left: 12px;
     padding-right: 0px;

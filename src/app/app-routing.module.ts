@@ -24,7 +24,7 @@ const routes: Routes = [
       path: 'carRental', component:  CubixCabComponent
      },
      {
-      path: '**', pathMatch: 'full', 
+      path: 'not-found', pathMatch: 'full', 
       component:NotFoundComponent
      },
    

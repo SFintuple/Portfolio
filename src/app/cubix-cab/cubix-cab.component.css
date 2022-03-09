@@ -10,9 +10,15 @@
         display: none;
     }
 }
+.justify{
+    justify-content: end;
+}
 @media only screen and (max-width: 500px) {
     .container-fluid-md{
         padding-left: 30px;
         padding-right: 30px;
+    }
+    .justify{
+        justify-content: unset;
     }
     }

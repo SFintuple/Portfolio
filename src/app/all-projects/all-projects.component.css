@@ -1,0 +1,18 @@
+.cab_image_small{
+    display: none;
+}
+.mt_30{
+    margin-top: 60px;
+}
+@media only screen and (max-width: 600px) {
+    .cab_image_small{
+        display: block;
+        margin-bottom: 20px;
+    }
+    .cab_image{
+        display: none;
+    }
+    .mt_30{
+       margin-top: 0px;
+    }
+}

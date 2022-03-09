@@ -1,0 +1,45 @@
+.navbar{
+    padding: 0px;
+}
+
+
+@media only screen and (max-width: 1500px) {
+  .container-fluid_sm{
+    padding-left: 100px;
+    padding-right: 0px;
+      }
+      .container-fluid{
+        padding-left: 100px;
+        padding-right: 100px;
+      }     
+}
+
+@media only screen and (max-width: 1300px) {
+
+}
+@media only screen and (max-width: 1000px) {
+  .container-fluid{
+padding-left: 30px;
+padding-right: 30px;
+  }
+
+  .container-fluid_sm{
+    padding-left: 12px;
+    padding-right: 0px;
+      }
+      .modal-content{
+        border-radius: 0;
+        padding: 0;
+      }
+}
+@media only screen and (max-width: 600px) {
+.fixed-top{
+ position: relative;
+}
+.bg_white{
+  background-color: white;
+}
+
+
+}
+

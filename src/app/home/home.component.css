@@ -1,0 +1,165 @@
+.sb-group {
+    position: relative;
+}
+.modal-body{
+    overflow:hidden;
+}
+input:focus {
+    outline: none;
+}
+label {
+    color: #999;
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+.img_small{
+    display: none;
+}
+input:focus ~ label,
+input:valid ~ label {
+    top: -2px;
+    font-size: 12px;
+    color: #101010;
+}
+.bar {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.bar:before,
+.bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 0px;
+    position: absolute;
+    background: #101010;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+.bar:before {
+    left: 50%;
+}
+.bar:after {
+    right: 50%;
+}
+input:focus ~ .bar:before,
+input:focus ~ .bar:after {
+    width: 50%;
+}
+.highlight {
+    position: absolute;
+    width: 100px;
+    left: 0;
+    pointer-events: none;
+}
+/* active state */
+
+input:focus ~ .highlight {
+    -webkit-animation: inputHighlighter 0.2s ease;
+    -moz-animation: inputHighlighter 0.2s ease;
+    animation: inputHighlighter 0.2s ease;
+}
+/* ANIMATIONS ================ */
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+    from { background:none; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+    from { background:none; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+    from { background:none; }
+  to 	{ width:0; background:transparent; }
+}
+.text-group textarea {
+    display: block;
+    background: none;
+    border-bottom: 1px solid #a39898;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+    box-shadow: none;
+    font-size:18px; 
+    padding:16px 0px 10px 0px;
+}
+.text-group textarea:focus ~ .input-label,
+.text-group textarea:valid ~ .input-label,
+.text-group textarea.form-file ~ .input-label,
+.text-group textarea.has-value ~ .input-label {
+    font-size: 12px;
+    ;
+    color: gray;
+    top: -0.2rem;
+    left: 0;
+}
+.text-group textarea:focus ~ .input-label {
+    color: #101010;
+}
+.text-group textarea:focus ~ .bar::before {
+    width: 100%;
+    left: 0;
+}
+.text-group {
+    position: relative;
+}
+.form-control{
+    border-radius: 0px;
+}
+
+.modal-body {
+    padding: 0rem;
+    border-radius: 100%/60px 60px 60px 60px;
+}
+.modal-icon{
+    border-radius: 100%/60px 0px 60px 60px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .modal-body {
+        border-radius:0px;
+        padding: 0px;
+
+    } 
+    .modal-icon{
+        border-radius: 0px;
+        padding: 0px;
+    }
+  .modal-content{
+      padding: 0px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+.modal-dialog{
+    padding: 0px;
+}
+.popupbackdrop{
+    padding: 0px;
+}
+.padding-custom{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.img_small{
+    display: block;
+    margin-bottom: 25px;
+}
+.img_big{
+    display: none;
+}
+}

@@ -18,6 +18,7 @@ label {
     -moz-transition: 0.2s ease all;
     -webkit-transition: 0.2s ease all;
 }
+
 .img_small{
     display: none;
 }
@@ -161,5 +162,8 @@ input:focus ~ .highlight {
 }
 .img_big{
     display: none;
+}
+.hero_1{
+    margin-left: 20px;
 }
 }

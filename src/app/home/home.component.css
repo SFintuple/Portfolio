@@ -163,7 +163,5 @@ input:focus ~ .highlight {
 .img_big{
     display: none;
 }
-.hero_1{
-    margin-left: 20px;
-}
+
 }

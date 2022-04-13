@@ -4,6 +4,9 @@
 .modal-body{
     overflow:hidden;
 }
+.min{
+    display: none;
+}
 input:focus {
     outline: none;
 }
@@ -163,5 +166,10 @@ input:focus ~ .highlight {
 .img_big{
     display: none;
 }
-
+.min{
+    display: block;
+}
+.max{
+    display: none;
+}
 }
